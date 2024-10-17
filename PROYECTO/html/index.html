@@ -1,0 +1,74 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Chaquetas para Motociclistas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>YERIT MOTOS PUNTO DE FABRICA </h1>
+        <h1> INDUMENTARIA Y ACCESORIOS PARA MOTORIZADOS</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">HOMBRE</a></li>
+                <li><a href="#productos">MUJER</a></li>
+                <li><a href="#productos">IMPERMEABLES</a></li>
+                <li><a href="#productos">ACCESORIOS</a></li>
+                <li><a href="#carrito">Carrito (<span id="carrito-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos">
+            <h2>PRODUCTOS</h2>
+            <div class="producto" data-nombre="Chaqueta A" data-precio="120">
+                <img src="/Página web/IMG-20231214-WA0002.jpg" alt="Chaqueta A">
+                <h3>Chaqueta Personalizada</h3>
+                <p>Precio: $85000</p>
+                <button class="agregar-btn">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-nombre="Chaqueta B" data-precio="150">
+                <img src="/Página web/IMG-20240210-WA0002.jpg" alt="Chaqueta B">
+                <h3>Chaqueta hombre</h3>
+                <p>Precio: $80000</p>
+                <button class="agregar-btn">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-nombre="Chaqueta C" data-precio="130">
+                <img src="/Página web/IMG-20240409-WA0121.jpg" alt="Chaqueta C">
+                <h3>Chaqueta Mujer</h3>
+                <p>Precio: $80000</p>
+                <button class="agregar-btn">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-nombre="impermeables" data-precio="130">
+                <img src="/Página web/IMG-20231115-WA0153.jpg" alt="Chaqueta C">
+                <h3>Impermeables</h3>
+                <p>Precio: $160000</p>
+                <button class="agregar-btn">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-nombre="accesorios" data-precio="130">
+                <img src="/Página web/IMG-20240914-WA0085.jpg" alt="Chaqueta C">
+                <h3>Accesorios</h3>
+                <p>Precio: $30000</p>
+                <button class="agregar-btn">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <section id="carrito" class="oculto">
+            <h2>Carrito de Compras</h2>
+            <ul id="carrito-lista"></ul>
+            <p id="total">Total: $0</p>
+            <button id="vaciar-btn">Vaciar Carrito</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Chaquetas para Motociclistas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
